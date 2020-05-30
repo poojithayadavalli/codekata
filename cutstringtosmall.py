@@ -1,0 +1,9 @@
+s=input().split()
+m=len(s[0])
+n=len(s[1])
+y=min([m,n])
+if(m!=n):
+    x=s[0][:y]+s[1][:y]
+else:
+    x=s[0]+s[1]
+print(x)

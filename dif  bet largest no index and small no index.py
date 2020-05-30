@@ -1,0 +1,5 @@
+x=int(input())
+y=input().split()
+m=y.index(max(y))
+n=y.index(min(y))
+print(m-n)

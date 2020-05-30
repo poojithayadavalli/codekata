@@ -1,0 +1,23 @@
+s=str(input())
+l=list(s)
+r=""
+f=0
+for i in range(len(s)-1):
+    k="".join(l[i+1:len(s)])
+    z=r+k  
+    y=list(z)
+    y.reverse()
+    y="".join(y)
+    if(y==z):
+        f=1 
+        break
+    r=r+s[i]
+r=list(r)
+r.reverse()
+r="".join(r)
+if(r=="".join(l[0:len(s)-1])):
+    f=1  
+if(f==1):
+    print("YES")
+else:
+    print("NO")

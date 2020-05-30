@@ -1,0 +1,5 @@
+n=input().split("[")
+s=list(n[1][:len(n[1])-1])
+x=''.join(s)
+k=int(n[0])
+print(x*k)

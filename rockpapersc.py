@@ -1,0 +1,23 @@
+n=input().split()
+if(n[0]=="P"):
+    if(n[1]=="R"):
+    	print("P")
+    elif(n[1]=="S"):
+        print("S")
+    else:
+        print("D")
+elif(n[0]=="R"):
+    if(n[1]=="P"):
+    	print("P")
+    elif(n[1]=="S"):
+    	print("R")
+    else:
+    	print("D")
+elif(n[0]=="S"):
+    if(n[1]=="R"):
+    	print("R")
+    elif(n[1]=="P"):
+    	print("S")
+    else:
+    	print("D")
+#one completed

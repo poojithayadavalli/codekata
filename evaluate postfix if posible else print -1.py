@@ -1,0 +1,42 @@
+s=str(input())
+s=list(s)
+f=1
+stack=[] 
+operand="0123456789"
+operand=list(operand)
+for i in range(len(s)):
+    if(s[i] in operand):
+        stack.append(int(s[i]))
+    else:
+        if(len(stack)<2):
+            f=0 
+            break
+        if(s[i]=="+"):
+            t=int(stack[len(stack)-1])+int(stack[len(stack)-2]) 
+            stack.pop(len(stack)-1)
+            stack.pop(len(stack)-1)
+            stack.append(t) 
+        elif(s[i]=="-"):
+            t=int(stack[len(stack)-2])-int(stack[len(stack)-1]) 
+            stack.pop(len(stack)-1)
+            stack.pop(len(stack)-1)
+            stack.append(t) 
+        elif(s[i]=="%"):
+            t=int(stack[len(stack)-1])%int(stack[len(stack)-2]) 
+            stack.pop(len(stack)-1)
+            stack.pop(len(stack)-1)
+            stack.append(t) 
+        elif(s[i]=="*"):
+            t=int(stack[len(stack)-1])*int(stack[len(stack)-2]) 
+            stack.pop(len(stack)-1)
+            stack.pop(len(stack)-1)
+            stack.append(t) 
+        elif(s[i]=="/"):
+            t=int(stack[len(stack)-1])/int(stack[len(stack)-2]) 
+            stack.pop(len(stack)-1)
+            stack.pop(len(stack)-1)
+            stack.append(t) 
+if(f==1):
+    print(stack[0])
+else:
+    print(-1)

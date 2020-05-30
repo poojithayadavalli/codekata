@@ -1,0 +1,17 @@
+n=int(input())
+l=list(map(int,input().split())) 
+if(len(l)==1):
+  print(0)
+  exit(0)
+jumps=1 
+t=l[0]
+ind=1 
+f=0 
+while(f==0):
+    if((ind+t)>=len(l)):
+        f=1 
+    else:
+        ind=ind+t 
+        t=l[ind-1] 
+        jumps=jumps+1
+print(jumps)

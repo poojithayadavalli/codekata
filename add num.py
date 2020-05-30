@@ -1,0 +1,5 @@
+x=int(input())
+y=''.join(input().split())
+y=int(y)
+z=str(y+1)
+print(*list(z))

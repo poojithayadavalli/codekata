@@ -1,0 +1,27 @@
+n=input().split("-")
+if(n[1]=="01"):
+    print("January")
+elif(n[1]=="02"):
+    print("February")
+elif(n[1]=="03"):
+    print("March")
+elif(n[1]=="04"):
+    print("April")
+elif(n[1]=="05"):
+    print("May")
+elif(n[1]=="06"):
+    print("June")
+elif(n[1]=="07"):
+    print("July")
+elif(n[1]=="08"):
+    print("August")
+elif(n[1]=="09"):
+    print("September")
+elif(n[1]=="10"):
+    print("October")
+elif(n[1]=="11"):
+    print("November")
+elif(n[1]=="12"):
+    print("December")
+else:
+    print("Invalid")
